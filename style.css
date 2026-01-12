@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/*header*/
+header {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #444;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+/*container*/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*sections*/
+section {
+    background-color: #CBC1AE;
+    padding: 20px;              /* inside spacing */
+    margin-bottom: 30px;        /* space between sections */
+    border: 1px solid #ddd;     /* visible box */
+}
+
+/*section headings*/
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+
+/*skills*/
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
