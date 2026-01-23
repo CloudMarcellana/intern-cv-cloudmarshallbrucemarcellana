@@ -5,56 +5,87 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/*header*/
-header {
-    background-color: #000080;
+/* dark/light mode */
+body.dark {
+    background-color: #1e1e1e;
     color: #ffffff;
+}
+
+body.dark section {
+    background-color: #333;
+}
+
+header {
+    background-color: blue;
+    color: white;
     padding: 25px;
     text-align: center;
-    border-bottom: 5px solid #444;
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
+
+#themeBtn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
-header p {
-    margin-top: 5px;
-    font-size: 1.1em;
+
+#colorBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
-/*container*/
+
+
+#clickCounter {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
-/*sections*/
+
 section {
     background-color: #CBC1AE;
-    padding: 20px;              /* inside spacing */
-    margin-bottom: 30px;        /* space between sections */
-    border: 1px solid #ddd;     /* visible box */
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    position: relative;
 }
 
-/*section headings*/
+
+.toggleBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;   
+    left: auto;    
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-}
-
-
-/*skills*/
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
 }

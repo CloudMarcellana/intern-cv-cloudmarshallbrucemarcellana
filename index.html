@@ -4,59 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>CV</title>
 </head>
 <body>
 
+    <!--counter -->
+    <div id="clickCounter">Clicks: 0</div>
+
     <header>
+        <button id="themeBtn">Dark Mode</button>
+
         <h1>Cloud Marshall Bruce Marcellana</h1>
         <p>Computer Science Student Intern</p>
-    </header>
 
+        <button id="colorBtn">Change Header Color</button>
+    </header>
 
     <main>
 
-        <section>
+        <section class="toggle-section">
             <h2>About Me</h2>
-            <p>
-                Computer Science student at FEU Institute of Technology with hands-on
-                experience in software development, mobile application development,
-                and UI/UX analysis. One of the main developers of ABaKaDa+, implementing
-                the Leitner learning algorithm and enhancing user experience through
-                structured testing and iteration.
-            </p>
+            <div class="content">
+                <p>
+                    Computer Science student at FEU Institute of Technology with hands-on
+                    experience in software development, mobile application development,
+                    and UI/UX analysis. One of the main developers of ABaKaDa+, implementing
+                    the Leitner learning algorithm and enhancing user experience through
+                    structured testing and iteration.
+                </p>
+            </div>
+            <button class="toggleBtn">Hide</button>
         </section>
 
-        <section>
+        <section class="toggle-section">
             <h2>Education</h2>
-
-            <article>
+            <div class="content">
                 <ul>
-                <li>Arellano University – Pasig (2020-2022)</li>
-                <p>Information and Communications Technology</p>
+                    <li>Arellano University – Pasig (2020–2022)</li>
+                    <p>Information and Communications Technology</p>
 
-                <li>FEU Institute of Technology (2022-Present)</li>
-                <p>Bachelor of Science in Computer Science with Specialization in Software Engineering</p>
+                    <li>FEU Institute of Technology (2022–Present)</li>
+                    <p>Bachelor of Science in Computer Science with Specialization in Software Engineering</p>
                 </ul>
-            </article>
-
-
-
+            </div>
+            <button class="toggleBtn">Hide</button>
         </section>
 
-        <section>
+        <section class="toggle-section">
             <h2>Technical Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-            </ul>
+            <div class="content">
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <button class="toggleBtn">Hide</button>
         </section>
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
